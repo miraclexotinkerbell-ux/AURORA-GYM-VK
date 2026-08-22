@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(({ command }) => {
   return {
-    base: '/AURORA-GYM-by-VK/',
+    base: './',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
