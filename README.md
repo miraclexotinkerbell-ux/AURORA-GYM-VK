@@ -1,11 +1,42 @@
-<div align="center">
+# AURORA GYM - Management System & POS Kasir Multi-Shift
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Sistem manajemen operasional gym modern lengkap dengan:
+- **Screening Posisi Staf (RBAC)**: Owner, Manager, Kasir Pagi/Sore, dan Personal Trainer.
+- **Rekapitulasi Shift Kasir Mandiri (Z-Report)**: Modal awal, rekonsiliasi kas fisik, perhitungan selisih, dan serah terima kasir.
+- **Sistem Jadwal Sesi Gender & Akhir Pekan**:
+  - Senin - Jumat: Sesi Khusus Perempuan (*Morning Glow & Afternoon Fit*), Sesi Khusus Laki-laki (*Power & Strength*), Sesi Malam Campur.
+  - Sabtu & Minggu: **Sesi Bebas Campur Pria & Wanita (All-Access Weekend)** sepanjang jam operasional.
+- **Check-In RFID & Barcode Scanner Simulator**.
+- **POS Retail & Membership Renewal WhatsApp Receipts**.
+- **Laporan Keuangan & Cetak Struk Kasir**.
 
-  <h1>Built with AI Studio</h2>
+---
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 🚀 Panduan Deploy ke GitHub Pages (Agar Tampil Sempurna & Tidak Layar Putih)
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+Layar putih di GitHub biasanya terjadi karena GitHub Pages menyajikan file mentah (`.tsx`) dan bukan hasil build (`dist/`).
 
-</div>
+### Cara Praktis Mengaktifkan GitHub Pages via GitHub Actions:
+
+1. **Buka Repositori Anda di GitHub** (misal: `AURORA-GYM-by-VK`).
+2. Masuk ke menu tab **Settings** (Pengaturan).
+3. Di bilah sisi kiri, klik menu **Pages**.
+4. Pada bagian **Build and deployment**:
+   - Ubah **Source** menjadi **`GitHub Actions`** (bukan *Deploy from a branch*).
+5. Workflow `.github/workflows/deploy.yml` yang sudah kami siapkan akan otomatis mem-build file React/Vite dan menayangkannya langsung ke alamat:
+   `https://<username>.github.io/AURORA-GYM-by-VK/`
+
+---
+
+## 💻 Menjalankan di Lokal (Development)
+
+```bash
+# 1. Install dependensi
+npm install
+
+# 2. Jalankan server lokal
+npm run dev
+
+# 3. Build produksi
+npm run build
+```
